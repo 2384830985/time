@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="userinfo-nickname">这个是一个任务</text>
+  <text class="userinfo-time">接下里20分钟,专注做这件事</text>
+  <view class='container-userinfo'>
+    <!--下面是渲染  -->
+    <view class="userinfo">
+      <view class="userinfo-list" wx:for="{{itemList}}" wx:for-item="item" wx:for-index="idx" wx:key="item.id" data-item="{{item}}" bindtap="onTabsItemTap">
+        <view class="{{item.border==1?'userinfo-content':'userinfo-content1'}}">
+          <image class='userinfo-content-logo' src='{{item.imgUrl}}'></image>
+          <text class='userinfo-content-title'>{{item.name}}</text>
+          <view wx:if="{{userinfoIndex==item.id}}" class='SelectLine' style="background-color:{{item.color}}"></view>
+        </view>
+      </view>
+    </view>
+    <!--下面是渲染  -->
+    <view class="userinfo">
+      <view class="userinfo-list" 
+      wx:for="{{itemList1}}" wx:for-item="item" wx:for-index="idx" wx:key="item.id"  data-item="{{item}}" bindtap="onTabsItemTap" >
+        <view class="{{item.border==1?'userinfo-content2':'userinfo-content3'}}">
+          <image class='userinfo-content-logo' src='{{item.imgUrl}}'></image>
+          <text class='userinfo-content-title'>{{item.name}}</text>
+          <view wx:if="{{userinfoIndex==item.id}}" class='SelectLine' style="background-color:{{item.color}}"></view>
+        </view>
+      </view>
+    </view>
+    <button class='userinfo-go' bindtap="go" hover-class="other-button-hover"> go </button>
+  </view>
+</view>
+<time id="time" modal-hidden="{{is_modal_Hidden}}" bind:myevent="myevent" modal-msg="{{is_modal_Msg}}" ref="riguser"/>  

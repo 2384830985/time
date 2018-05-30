@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/time/time"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "计时",
+    "backgroundColor": "#87CEFF",
+    "backgroundColorTop": "#87CEFF",
+    "navigationBarBackgroundColor": "#87CEFF",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "计时",
+        "iconPath": "pages/images/time.png",
+        "selectedIconPath": "pages/images/time1.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "关于我",
+        "iconPath": "pages/images/me.png",
+        "selectedIconPath": "pages/images/me1.png"
+      }
+    ],
+    "position": "bottom",
+    "selectedColor": "#434343",
+    "color": "#d9d9d9"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

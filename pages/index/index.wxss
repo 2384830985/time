@@ -1,0 +1,117 @@
+/**index.wxss**/
+view{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none !important;
+}
+.userinfo {
+  display: flex;
+  width: 100%;
+}
+.userinfo-list{
+  flex:1;
+}
+.userinfo-content{
+  padding-top: 160rpx;
+  text-align: center; 
+  position: relative;
+  width: 100%;
+  height: 225rpx;
+  border-bottom: 1rpx solid rgb(244, 244, 244);
+  border-right: 1rpx solid rgb(244, 244, 244);
+}
+.userinfo-content1{
+  padding-top: 160rpx;
+  text-align: center; 
+  position: relative;
+  width: 100%;
+  height: 225rpx;
+  border-bottom: 1rpx solid rgb(244, 244, 244);
+}
+.userinfo-content2{
+  padding-top: 160rpx;
+  text-align: center; 
+  position: relative;
+  width: 100%;
+  height: 225rpx;
+  border-right: 1rpx solid rgb(244, 244, 244);
+}
+.userinfo-content3{
+  padding-top: 160rpx;
+  text-align: center; 
+  position: relative;
+  width: 100%;
+  height: 225rpx;
+}
+.container-userinfo{
+  width: 90%;
+}
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100%;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: black;
+  margin: 100rpx 0 0;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.userinfo-content-logo{
+  width: 130rpx;
+  height: 130rpx;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  margin-left: -65rpx;
+}
+.userinfo-content-title{
+  font-size: 30rpx;
+  color: rgb(200, 200, 200)
+}
+.userinfo-content-title{
+  font-size: 30rpx;
+}
+.SelectColor-block{
+  color: black;
+}
+.userinfo-content:hover .userinfo-content-title{
+  color: black;
+}
+.userinfo-content1:hover .userinfo-content-title{
+  color: black;
+}
+.SelectLine{
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0
+}
+.userinfo-time{
+  font-size: 26rpx;
+  color: rgb(200, 200, 200);
+  margin: 20rpx 0 100rpx
+}
+.m-t-6{
+  margin-top: 60rpx;
+}
+.userinfo-go{
+  margin-top: 60rpx;
+  background: #87CEFF;
+  color: white;
+  border: none
+}

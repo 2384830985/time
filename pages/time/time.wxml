@@ -1,0 +1,9 @@
+<!--pages/time/time.wxml-->
+<view hidden='{{modalHidden}}'>  
+  <view class='mask_layer'>
+  <view class='modal_click_leave' bindtap='modal_click_Hidden'>离开</view>
+  <view class='mask_layer_time'>{{minute1}}:{{second1}}</view>
+  <image wx:if="{{!music}}" class='mask_layer_mu' src='../images/mu.png' bindtap='musicClick'></image>
+  <image wx:if="{{music}}" class='mask_layer_mu' src='../images/mu1.png' bindtap='musicClick'></image>
+  </view>
+</view>  
